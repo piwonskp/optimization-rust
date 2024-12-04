@@ -30,7 +30,9 @@
 
 #[macro_use]
 extern crate log;
+#[cfg(feature = "rand")]
 extern crate rand;
+#[cfg(feature = "rand_pcg")]
 extern crate rand_pcg;
 
 
@@ -42,6 +44,7 @@ mod utils;
 mod numeric;
 mod line_search;
 mod gd;
+#[cfg(all(feature = "rand", feature = "rand_pcg"))]
 mod sgd;
 
 
@@ -49,4 +52,5 @@ pub use types::{Function, Function1, Func, Minimizer, Evaluation, Summation, Sum
 pub use numeric::NumericalDifferentiation;
 pub use line_search::{LineSearch, FixedStepWidth, ExactLineSearch, ArmijoLineSearch};
 pub use gd::GradientDescent;
+#[cfg(all(feature = "rand", feature = "rand_pcg"))]
 pub use sgd::StochasticGradientDescent;
