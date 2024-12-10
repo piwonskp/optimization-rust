@@ -16,7 +16,7 @@ use rand::random;
 use std::f64::INFINITY;
 use std::ops::Add;
 
-use types::{Function, Function1};
+use crate::types::{Function, Function1};
 use crate::problems::Problem;
 
 macro_rules! define_problem {

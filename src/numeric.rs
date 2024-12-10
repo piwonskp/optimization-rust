@@ -1,7 +1,7 @@
 use std::f64::EPSILON;
 
-use problems::Problem;
-use types::{Function, Function1};
+use crate::problems::Problem;
+use crate::types::{Function, Function1};
 
 
 /// Wraps a function for which to provide numeric differentiation.

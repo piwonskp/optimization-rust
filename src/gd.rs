@@ -1,8 +1,8 @@
 use log::Level::Trace;
 
-use types::{Function1, Minimizer, Solution};
-use line_search::{LineSearch, ArmijoLineSearch};
-use utils::is_saddle_point;
+use crate::types::{Function1, Minimizer, Solution};
+use crate::line_search::{LineSearch, ArmijoLineSearch};
+use crate::utils::is_saddle_point;
 
 
 /// A simple Gradient Descent optimizer.

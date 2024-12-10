@@ -1,5 +1,5 @@
 
-use types::Function;
+use crate::types::Function;
 
 
 /// Specifies a well known optimization problem.

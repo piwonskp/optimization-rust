@@ -3,7 +3,7 @@ use rand::{SeedableRng, random};
 use rand::seq::SliceRandom;
 use rand_pcg::Pcg64Mcg;
 
-use types::{Minimizer, Solution, Summation1};
+use crate::types::{Minimizer, Solution, Summation1};
 
 
 /// Provides _stochastic_ Gradient Descent optimization.
